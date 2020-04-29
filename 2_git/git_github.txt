@@ -10,7 +10,11 @@ git commit -m ''
 origin  # git remote -v查看origin，与Clone or download地址一致
 
 注意：
-空目录不会提交
+1 创建空目录在git add时不会显示
+2 在创建的目录下编辑的文件，在git status查询时显示的是./
+git add ./后git status可显示文件名
+3 git add folder并且提交后在GitHub显示的是folder/file
+在编辑文件的目录下直接git add file并且提交后在GitHub上目录和文件可分级正常显示
 
 # 将fork的目录，从远程master分支上获取最新代码
 git pull origin master
