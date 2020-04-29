@@ -16,5 +16,5 @@ git add ./后git status可显示文件名
 3 git add folder并且提交后在GitHub显示的是folder/file
 在编辑文件的目录下直接git add file并且提交后在GitHub上目录和文件可分级正常显示
 
-# 将fork的目录，从远程master分支上获取最新代码
+# 将fork的目录，或者自己直接在GitHub编辑的目录，从远程master分支上获取最新代码到本地
 git pull origin master
