@@ -1,0 +1,16 @@
+# Git和GitHub的联合使用
+1 登录GitHub，New repository创建仓库，规定使用协议，可自动创建README.md
+2 复制Clone or download的地址
+3 在自己的Linux系统下：
+git clone address  # 复制远程目录到本地目录下（用于存放的目录不需要git init初始化）
+进入目录进行编辑操作后（该目录下有.git）
+git add file
+git commit -m ''
+4 git push origin master  # 把本地修改提交推送到远程分支上
+origin  # git remote -v查看origin，与Clone or download地址一致
+
+注意：
+空目录不会提交
+
+# 将fork的目录，从远程master分支上获取最新代码
+git pull origin master
